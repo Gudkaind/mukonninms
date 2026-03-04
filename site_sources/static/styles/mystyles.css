@@ -1,0 +1,206 @@
+@keyframes big-logo {
+    from {
+      width: 300px;
+      height: 40px;
+      background-color: #333F48;
+    }
+    to {
+        width: 200px;
+        height: 27px;
+      }
+  }
+
+@font-face {
+    font-family: 'SBMobile1';
+    src: url('../fonts/SBSansDisplay-Bold.otf');
+}
+
+body {
+    font-family: 'SBMobile1' !important;
+    font-size: 60px;
+    background-color: #333F48;
+}
+
+html {
+    background-color: #333F48;
+}
+
+.navbar-nav .nav-item .nav-link {
+    color: #f7f7f7;
+    font-size: 20px;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+    color: #333F48;
+    font-size: 20px;
+}
+
+.navbar-brand img {
+    width: 200px;
+    height: 27px;
+    padding-bottom: 3px;
+    animation-name: big-logo;
+    animation-duration: 2s;
+    animation-iteration-count: 1; /* infinite; */
+}
+
+
+.navbar-toggler {
+    background-color: #f7f7f7;
+}
+
+.container-fluid .text-center {
+    background-color: #333F48;
+}
+
+section { 
+   background: #333F48;
+   padding: 90px; 
+}
+
+.row {
+    background-color: #333F48;
+    
+}
+
+.card { 
+    background: rgb(72, 83, 91);
+    margin-top: 2rem;
+    border: solid #FFBC35;
+    border-radius: 10px;
+    box-shadow: 0px 0px 8px #FFBC35;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px); /* 2 Эффект при наведении */
+}
+
+.card-body {
+    background-color:rgb(72, 83, 91);;
+    border-radius: 10px;
+}
+
+.card-title {
+    background-color:#FFBC35;
+    border-radius: 10px;
+    color: #333F48;
+    font-size: 1.2rem;
+}
+
+.card-img-top {
+    background-color:rgb(72, 83, 91);
+    width: 60%;
+    height: 60%;
+}
+
+a { 
+    text-decoration:none;
+}
+
+h4 {
+    color: white;
+    text-align: center;
+    /*background-color:#FA5F05;*/
+}
+
+.glos {
+    color: white;
+    font-size: 1.2rem;
+    margin-top: 3.5rem;
+}
+
+.glos1 {
+    margin-top: 1.5rem;
+}
+
+body section .glos2 {
+    color: white;
+    font-size: 1.1rem;
+    font-weight: 400 !important;
+    /*margin-top: 1.5rem;*/
+    line-height: 1.7; 
+}
+
+ /* Стили для глоссария */
+        .glossary-menu {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .glossary-item {
+            margin-bottom: 10px;
+        }
+        
+        .glossary-header {
+            cursor: pointer;
+            padding: 12px 12px;
+            background-color: #333F48;
+            border: 2px solid #FA5F05;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            transition: background-color 0.2s;
+            font-size: 1rem;
+            color: white; 
+        }
+        
+        .glossary-header:hover {
+            background-color: #FA5F05;
+        }
+        
+        .glossary-header.active {
+            background-color: #FA5F05;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom: none;
+        }
+        
+        .glossary-header .arrow {
+            margin-right: 10px;
+            font-size: 12px;
+            transition: transform 0.2s;
+            display: inline-block;
+        }
+        
+        .glossary-header.active .arrow {
+            transform: rotate(90deg);
+        }
+        
+        .glossary-content {
+            display: none;
+            padding: 15px;
+            border: 1px solid #333F48;
+            border-top: none;
+            border-bottom-left-radius: 4px;
+            border-bottom-right-radius: 4px;
+            background-color: #333F48;
+            margin-bottom: 10px;
+        }
+        
+        .glossary-content.active {
+            display: block;
+        }
+        
+        .glos2 {
+            margin-bottom: 10px;
+            padding: 5px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .glos2:last-child {
+            border-bottom: none;
+        }
+        
+        .glos2 span {
+            font-weight: bold;
+        }
+        
+        /* Стили для навигации (оставляем как есть) */
+        .navbar-brand img {
+            height: 40px;
+        }
+        
+        .bg-orange {
+            background-color: #333F48;
+        }
